@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="379.0" prefWidth="581.0" style="-fx-background-color: #FFE4C4;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <Pane layoutX="320.0" layoutY="11.0" prefHeight="358.0" prefWidth="249.0">
+         <children>
+            <Button layoutX="111.0" layoutY="297.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="89.0" text="LOGIN" textFill="#a63014" />
+            <RadioButton layoutX="77.0" layoutY="243.0" mnemonicParsing="false" text="Cheshier">
+               <toggleGroup>
+                  <ToggleGroup fx:id="mygroup" />
+               </toggleGroup></RadioButton>
+            <RadioButton layoutX="167.0" layoutY="243.0" mnemonicParsing="false" text="Admin" toggleGroup="$mygroup" />
+            <TextField fx:id="txtpassword" layoutX="77.0" layoutY="186.0" prefHeight="25.0" prefWidth="156.0" />
+            <TextField fx:id="txtusername" layoutX="74.0" layoutY="125.0" prefHeight="25.0" prefWidth="156.0" />
+            <Label layoutX="75.0" layoutY="100.0" prefHeight="25.0" prefWidth="139.0" text="Username :" />
+            <Label layoutX="75.0" layoutY="160.0" prefHeight="25.0" prefWidth="139.0" text="Password :" />
+            <ImageView fitHeight="82.0" fitWidth="99.0" layoutX="94.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Users/Chathumal/Documents/images.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="59.0" layoutY="117.0" prefHeight="153.0" prefWidth="249.0" text="point-of-sale system">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.004761904761904773" startX="1.0" startY="0.4095238095238096">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1891999989748001" green="0.8600000143051147" blue="0.7655552625656128" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
